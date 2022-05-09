@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+html {
+  font-family: "Red Hat Display", sans-serif;
+  text-transform: capitalize;
+}
+
+body {
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.container {
+  width: fit-content;
+  background-color: #fff;
+  border-radius: 16px;
+  text-align: center;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container img.hero {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  margin-bottom: 30px;
+}
+.container .content {
+  width: 70%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .content h2 {
+  margin-bottom: 16px;
+}
+.container .content p {
+  color: hsl(224, 23%, 55%);
+}
+.container .content .audio {
+  width: 250px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+.container .content .audio .price {
+  display: flex;
+  align-items: center;
+}
+.container .content .audio .price ul {
+  list-style: none;
+  margin-left: 20px;
+}
+.container .content .audio .price ul li:nth-child(1) {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.container .content .audio .price ul li:nth-child(2) {
+  color: hsl(224, 23%, 55%);
+}
+.container .content .audio a {
+  transition: all 0.3s ease;
+}
+.container .content .audio a:hover {
+  cursor: pointer;
+  color: hsl(224, 23%, 55%);
+}
+.container .buttons {
+  width: 70%;
+}
+.container .buttons p:nth-child(1) {
+  padding: 10px;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px grey;
+  transition: all 0.3s ease;
+
+}
+.container .buttons p:nth-child(1):hover{
+  cursor: pointer;
+  background-color:  hsl(224, 23%, 55%);
+}
+.container .buttons p:nth-child(2) {
+  margin-bottom: 30px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+}
+.container .buttons p:nth-child(2):hover{
+  cursor: pointer;
+  color: black;
+  font-weight: bolder;
+}
+
+
+.attr {
+  position: relative;
+  top: 60px;
+  width: 100%;
+  text-align: center;
+}
+.attr .attrb {
+  font-size: 11px;
+}
+.attr .attrb a {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 300px;
+  }
+  .container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container .content .audio {
+    width: 250px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 920px) {
+  .container {
+    width: 450px;
+  }
+}
